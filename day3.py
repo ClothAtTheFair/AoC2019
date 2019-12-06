@@ -33,7 +33,7 @@ def coords(directions):
         uhh.append(man)
 
     
-    print(man)
+    print(x,y)
     return wires
 
     
@@ -42,10 +42,15 @@ def part1():
    print()
 
 if __name__ == "__main__":
-    directions = []
+    wire1 = []
+    wire2 = []
     for item in open("day31.txt").read().split(","):
-        directions.append(str(item))
-    coords(directions)
+        wire1.append(str(item))
+    coords(wire1)
+
+    for item in open("day32.txt").read().split(","):
+        wire2.append(str(item))
+    coords(wire2)
 
    
    
